@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Route, Router, Routes} from "react-router-dom";
 import Register from "./Register";
 import Login from "./login";
+import Redirect from "./redirect";
 
 function Home() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     {<Route path={"/"} element={<Home/>}></Route>}
                     {<Route path={"/login"} element={<Login/>}></Route>}
                     {<Route path={"/register"} element={<Register/>}></Route>}
+                    {<Route path={"/redirect"} element={<Redirect/>}></Route>}
                 </Routes>
             </BrowserRouter>
         </div>
